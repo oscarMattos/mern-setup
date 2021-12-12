@@ -1,0 +1,41 @@
+{
+  "name": "mern-setup",
+  "version": "1.0.0",
+  "description": "MERN Setup",
+  "main": "main.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
+    "development": "nodemon",
+    "start": "NODE_ENV=production node ./dist/server.generated.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscarMattos/mern-setup.git"
+  },
+  "author": "Oscar Mattos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscarMattos/mern-setup/issues"
+  },
+  "homepage": "https://github.com/oscarMattos/mern-setup#readme",
+  "dependencies": {
+    "@hot-loader/react-dom": "^17.0.1",
+    "express": "^4.17.1",
+    "mongodb": "^4.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hot-loader": "^4.13.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "nodemon": "^2.0.15",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-middleware": "^5.2.2",
+    "webpack-hot-middleware": "^2.25.1",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
